@@ -1,0 +1,48 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary: #00ffee;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+.b {
+    color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* button */
+.btn-outline-primary {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary:focus {
+    color: black !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+/* navbar */
+.navbar-brand {
+    color: white !important;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold !important;
+}
+.nav-link:hover, 
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 3px solid var(--primary) !important;
+}
