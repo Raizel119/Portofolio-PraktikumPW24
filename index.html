@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style5.3.css">
 </head>
 
@@ -38,7 +39,7 @@
                             <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -55,11 +56,11 @@
                         equally
                         passionate about technology!
                     </p>
-                    <br><button type="button" class="btn btn-outline-primary">Hire</button>
-                </div>
-                <div class="col" style="margin-left: 150px">
-                    <img src="picture.jpg" class="rounded-circle shadow" alt="picture" style="width: 350px; height: 350px;">
-                </div>
+                    <br><button type="button" class="btn btn-outline-primary" id="hire">Hire</button>
+            </div>
+            <div class="col" style="margin-left: 150px">
+                <img src="picture.jpg" class="rounded-circle shadow" alt="picture" style="width: 350px; height: 350px;">
+            </div>
         </div>
         <!-- education -->
         <div class="row" id="education">
@@ -72,7 +73,7 @@
                     </div>
                     <div class="timeline-content">
                         <h3>EVERGREEN Elementary School</h3>
-                        <p>paragraph</p>
+                        <!-- <p>paragraph</p> -->
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -82,7 +83,7 @@
                     </div>
                     <div class="timeline-content">
                         <h3>SUTOMO 1 Junior High School</h3>
-                        <p>paragraph</p>
+                        <!-- <p>paragraph</p> -->
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -92,7 +93,7 @@
                     </div>
                     <div class="timeline-content">
                         <h3>SUTOMO 1 Senior High School</h3>
-                        <p>paragraph</p>
+                        <!-- <p>paragraph</p> -->
                     </div>
                 </div>
             </div>
@@ -101,34 +102,54 @@
         <h3 class="heading"><b>SERVICES</b></h3>
         <div class="row row-cols-1 row-cols-md-3 g-4" id="services">
             <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Back-End Developer</h5>
-                  <p class="card-text">I am a back-end developer skilled in building robust server-side applications using languages like Python and Java. I thrive in collaborative, agile environments and prioritize best practices for maintainable, high-quality code.</p>
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Back-End Developer</h5>
+                        <p class="card-text">I am a back-end developer skilled in building robust server-side
+                            applications using languages like Python and Java. I thrive in collaborative, agile
+                            environments and prioritize best practices for maintainable, high-quality code.</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" >
-                  <h5 class="card-title">Game Developer</h5>
-                  <p class="card-text">I enjoy game development and have some experience in game development. I have developed a game called 3072 which is modified from the 2048 game.</p>
-                  <a href="https://github.com/Raizel119/3072" class="btn btn-outline-primary">Check it out</a>
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Game Developer</h5>
+                        <p class="card-text">I enjoy game development and have some experience in game development. I
+                            have developed a game called 3072 which is modified from the 2048 game.</p>
+                        <a href="https://github.com/Raizel119/3072" class="btn btn-outline-primary">Check it out</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
         <!-- contact -->
-        
+        <h3 class="heading"><b>CONTACT</b></h3>
+        <div class="row" id="contact">
+            <div class="col" style="text-align: center;">
+                <i class='bx bxl-instagram bx-lg'></i>
+                <p>Instagram: @limrichard119</p>
+            </div>
+            <div class="col" style="text-align: center;">
+                <i class='bx bxl-whatsapp bx-lg'></i>
+                <p>Whatsapp: 0895-6331-97300</p>
+            </div>
+            <div class="col" style="text-align: center;">
+                <i class='bx bxl-facebook-circle bx-lg'></i>
+                <p>Facebook: Richard Lim</p>
+            </div>
+        </div>
     </div>
-        <!-- footer -->
-        <footer class="bg-dark text-white text-center pt-3 pb-2" style="margin-top: 120px;">
-            <p>&copy Richard Lim | All rights reserved.</p>
-        </footer>
-        
-        
-    </body>
-    
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center pt-3 pb-2" style="margin-top: 120px;">
+        <p>&copy Richard Lim | All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('hire').onclick = function () {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
+</body>
+
 </html>
